@@ -19,8 +19,15 @@ $(document).on('ready', function() {
 
 	$( "button" ).on('click', function() {		// On click of show/hide button...
 
-		$(".profile-form").addClass("show")
-		$( "button" ).empty().append("Hide Form")
+		// Show the form and change the button text
+		$(".profile-form").toggleClass("show")
+		
+		if( $(".profile-form").hasClass("show")) {
+			$( "button" ).empty().append("Hide Form")
+		}
+		else {
+			$( "button" ).empty().append("Show Form")
+		}
 
 	})
 });
