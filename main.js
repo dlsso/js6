@@ -17,5 +17,10 @@ $(document).on('ready', function() {
 
 	});
 
+	$( "button" ).on('click', function() {		// On click of show/hide button...
 
+		$(".profile-form").addClass("show")
+		$( "button" ).empty().append("Hide Form")
+
+	})
 });

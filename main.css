@@ -67,3 +67,16 @@ nav a{
 .profile-pic{
 	height: 150px;
 }
+
+.profile-form{
+	display: none;
+	border-radius: 4px;
+}
+
+#show-hide{
+	float: right;
+}
+
+.show{
+	display: block;
+}
